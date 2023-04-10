@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta  charset="UTF-8" />
+        <title>Assign Department</title>   
+        <link rel="stylesheet" href="assign_dep.css">
+    </head>
+    <body>
+        <div class="center">
+            <div class="title">
+                <h2>Assign Department</h2>
+            </div>
+            <div>
+                <form method="post" class="form">
+
+                    <div>
+                        <input type="text" required  name="Name" class="name" placeholder="Name" readonly>
+                    </div>
+                    <div>
+                        <input type="number" required name="ID" class="id" placeholder="ID" readonly>
+                    </div>
+                    <div>
+                        <label for="Dep"></label>
+                        <select name="Department" id="Dep" class="Dep">
+                            <option value="AI">Artificial Intelligence</option>
+                            <option value="CS">Computer Science</option>
+                            <option value="DS">Decision Support</option>
+                            <option value="IS">Information System</option>
+                            <option value="IT">Information Technology</option>
+                        </select>
+                    </div>
+                    <br>
+                    <button type="Submit" class="submit">Submit</button>
+                </form>
+            </div>
+
+        </div>
+
+        <script>
+            var name = localStorage.getItem("name");
+            var id = localStorage.getItem("id");
+
+            console.log("Name: " + name);
+            console.log("ID: " + id);
+
+            document.querySelector('.name').value = name;
+            document.querySelector('.id').value = id;
+        </script>
+    </body>
+</html>

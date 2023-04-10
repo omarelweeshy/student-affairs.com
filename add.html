@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8"/> 
+        <title>Add Student</title>
+        <link rel="stylesheet" href="addPage.css">
+    </head>
+    <body>
+        <div class="center">
+            <div class="title">
+                <h2>Add Student</h2>
+            </div>
+            <form method="POST">
+                <div>
+                    <div>
+                    <input type="text" required  name="Name" class="name" placeholder="Name">
+                    </div>
+    
+                    <div>
+                    <input type="number" required name="ID" class="id" placeholder="ID">
+                    </div>
+    
+                    <div>
+                    <input type="Email" required  name="Email" class="email" placeholder="Email">
+                    </div>
+    
+                    <div>
+                        <input type="number" required name="mobile" class="mobile" placeholder="Phone Number">
+                    </div>
+    
+                    <div>
+                        <input type="text" placeholder="Date Of Birth" onfocus="(this.type='date')" required name="DOB" class="dob">
+                    </div>
+
+                    <div>
+                        <input type="number" required name="GPA" class="gpa" placeholder="GPA">
+                    </div>
+ 
+                    <div>
+                        <select name="level" class="level">
+                            <option value="" disabled selected>Level</option>
+                            <option value="First">First level</option>
+                            <option value="Second">Second level</option>
+                            <option value="Third">Third level</option>
+                            <option value="Fourth">Fourth level</option>
+                        </select>
+                    </div>
+                                    
+                    <div>
+                        <select name="Department" class="department">
+                            <option value="" disabled selected>Department</option>
+                            <option value="GN">General</option>
+                            <option value="AI">Artificial Intelligence</option>
+                            <option value="CS">Computer Science</option>
+                            <option value="DS">Decision Support</option>
+                            <option value="IS">Information System</option>
+                            <option value="IT">Information Technology</option>
+                        </select>
+                    </div>
+    
+                    <div class="gen">
+                        <input id="M" type="radio" value="Male" name = "Gender" required class="gender"> 
+                        <label for="M"> Male</label>
+                        <input id ="F" type="radio" value="Female" name = "Gender" class="gender">
+                        <label for="F">Female</label>
+                    </div>
+    
+                    <button type="Submit" class="submit">Submit</button>
+                </div>
+        </div>
+    </body>
+</html>

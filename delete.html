@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8"/>
+        <title>Delete Student Data</title>  
+        <link rel="stylesheet" href="delete.css"> 
+    </head>
+    <body>
+        <div class="center">
+
+            <div class="title">
+                <h2>Delete Student Data</h2>
+            </div>
+            
+            <form>
+
+                <div>
+                    
+                    <div>
+                        <input type="text" required  name="Name" class="name" placeholder="Name" readonly>
+                    </div>
+        
+                    <div>
+                        <input type="number" required name="ID" class="id" placeholder="ID" readonly>
+                    </div>
+        
+                    <button type="Submit" class="submit">Submit</button>
+
+                </div>
+      
+            </form>
+
+        </div>
+        <script>
+            var name = localStorage.getItem("name");
+            var id = localStorage.getItem("id");
+
+            console.log("Name: " + name);
+            console.log("ID: " + id);
+
+            document.querySelector('.name').value = name;
+            document.querySelector('.id').value = id;
+        </script>
+    </body>
+</html>

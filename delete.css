@@ -1,0 +1,61 @@
+body{
+    background-image: url("SA.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+.title {
+    position: relative;
+    margin: 0px 0px 0px 0px;
+    display: inline-block;
+    left: 35px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: 200;
+}
+
+.center {
+    background-color: white;
+    width: 300px;
+    height: 250px;
+    border-radius: 30px;
+    position: relative;
+    left: 39%;
+    margin-top: 200px;
+    box-shadow: 0px 0px 35px 10px #000;
+}
+
+input {
+    border-radius: 10px;
+    border-color: blue;
+    margin: 8px 50px;
+    padding: 5px;
+    height: 20px;
+    width: 185px;
+}
+
+.submit {
+    border-color: blue;
+    border-radius: 10px;
+    border-width: 2px;
+    position: relative;
+    top: 5px;
+    margin: 10px 90px;
+    width: 120px;
+    height: 25px;
+    text-align-last: center;
+    transition: box-shadow 0.5s ease-in-out;
+}
+
+.submit:hover {
+    box-shadow: 0px 0px 20px 10px lightblue;
+}
+
+.submit {
+    transition-duration: 0.5s;
+}
+
+::-webkit-input-placeholder {
+    text-align: center;
+    color: black;
+}
+

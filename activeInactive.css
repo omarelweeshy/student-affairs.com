@@ -1,0 +1,60 @@
+body{
+    background-image: url("SA.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+.activeInactive {
+    background-color: white;
+    border-collapse: collapse;
+    margin: 25px 0;
+    font-size: 0.9em;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    min-width: 500px;
+    border-radius: 30px;
+    overflow: hidden;
+    box-shadow: 0px 0px 35px 10px #000;
+    margin-top: 15%;
+    margin-left: 30%;
+}
+
+.activeInactive thead tr {
+    background-color: blue;
+    color: white;
+    text-align: center;
+    font-weight: bold;
+}
+
+.activeInactive th,
+.activeInactive td {
+    padding: 10px 15px;
+}
+
+.activeInactive tbody tr {
+    border-bottom: 1px solid blue;
+    text-align: center;
+}
+
+.activeInactive tbody tr:nth-child(even) {
+    background-color: #DCDCDC;
+}
+
+#s {
+    border-radius: 5px;
+    overflow: hidden;
+    border: 1px solid blue;
+    background-color: white;
+}
+
+.sub {
+    background-color: white;
+    border-radius: 5px;
+    overflow: hidden;
+    border: 1px solid blue;
+    margin-left: 32%;
+    transition: box-shadow 0.5s ease-in-out;
+}
+
+.sub:hover {
+    box-shadow: 0px 0px 20px 10px lightblue;
+}

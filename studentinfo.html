@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8"/> 
+        <title>Student Information</title>
+        <link rel="stylesheet" href="studentinfo.css">
+    </head>
+    <body>
+        <div class="center">
+            <div class="title">
+                <h2>Student Info</h2>
+            </div>
+            <form method="POST" action="update.html" id="student-info-form">
+                <div>
+                    <div>
+                    <input type="text" required  name="Name" class="name" placeholder="Name">
+                    </div>
+    
+                    <div>
+                    <input type="number" required name="ID" class="id" placeholder="ID">
+                    </div>
+
+                    <div>
+                        <button type="Submit" class="submit" >Submit</button>
+                    </div>
+                </div>
+                
+            </form>
+        </div>
+
+        <script>
+            var form = document.getElementById("student-info-form");
+
+            form.addEventListener("submit", function(event) {
+                event.preventDefault();
+                
+                var name = document.querySelector(".name").value;
+                var id = document.querySelector(".id").value;
+
+                localStorage.setItem("name", name);
+                localStorage.setItem("id", id);
+
+                window.location.href = "update.html";
+            });
+        </script>
+    </body>
+</html>

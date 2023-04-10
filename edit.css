@@ -1,0 +1,109 @@
+body{
+    background-image: url("SA.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+.title {
+    position: relative;
+    margin: 0px 0px 0px 0px;
+    display: inline-block;
+    left: 55px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: 200;
+}
+
+.center {
+    background-color: white;
+    width: 300px;
+    height: 550px;
+    border-radius: 30px;
+    position: relative;
+    left: 39%;
+    margin-top: 100px;
+    box-shadow: 0px 0px 35px 10px #000;
+}
+
+input {
+    border-radius: 10px;
+    border-color: blue;
+    margin: 8px 50px;
+    padding: 5px;
+    height: 20px;
+    width: 185px;
+}
+
+.level {
+    border-color: blue;
+    border-radius: 10px;
+    border-width: 2px;
+    margin: 5px 50px;
+    width: 200px;
+    height: 34px;
+    text-align-last: center;
+    padding: 5px;
+    position: relative;
+    top: 5px;
+}
+
+.dob {
+    border-color: blue;
+    border-radius: 10px;
+    border-width: 2px;
+    margin: 8px 50px;
+    width: 186px;
+    text-align-last: center;
+    padding: 5px;
+}
+
+.gender {
+    z-index: 0;
+    text-align: left;
+    position: relative;
+    top: -8px;
+    left: 130px;
+    height: 15px;
+    margin: -1px 50px;
+    width: 200px;
+}
+
+.gen {
+    position: relative;
+    left: -40px;
+    top: 25px;
+    height: 75px;
+    width: 300px;
+}
+
+::-webkit-input-placeholder {
+    text-align: center;
+    color: black;
+}
+
+
+label {
+    z-index: 10;
+    position: relative;
+    top: -28px;
+    right: -95px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: 100;
+    margin-bottom: 0px;
+}
+
+.submit {
+    border-color: blue;
+    border-radius: 10px;
+    border-width: 2px;
+    position: relative;
+    top: 5px;
+    margin: 10px 90px;
+    width: 120px;
+    height: 25px;
+    text-align-last: center;
+    transition: box-shadow 0.5s ease-in-out;
+}
+
+.submit:hover {
+    box-shadow: 0px 0px 20px 10px lightblue;
+}
